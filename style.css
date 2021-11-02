@@ -498,12 +498,14 @@ width: 40%;
 }
 .mem1{
   width:50%;
-  height:200px;
+  height: auto;
   background-color: whitesmoke;
 }
 
 .mem2{
   width:50%;
-  height:200px;
+  height: auto;
   background-color: rgb(255, 20, 20);
+  
 }
+
