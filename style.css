@@ -130,6 +130,7 @@ height: 50px;
 
 /*style the body*/
 body {
+
   background-image: url("backgroundimage.jpg");
 height: 100%;
 background-repeat: no-repeat;
@@ -143,9 +144,7 @@ background-size: cover;
   
   max-width: 1280px;
   
-margin: auto;
-overflow: auto;
-position: relative;
+
 
 }
 
@@ -494,8 +493,19 @@ width: 60%;
   }
 }
 
+.memimgcamp img{
+  width:100%;
+  height:70%;
+}
 
+.memimgcamp p1{
+  margin-left: 2%;
+}
 
+.memimgcamp img:hover{
+
+  box-shadow:   0 0 5px #ffffff;
+ }
 
 .mem {
   margin-left: 4%;
@@ -505,6 +515,38 @@ width: 60%;
    flex-wrap: wrap;
 
 }
+
+
+@media screen and (max-width: 600px) {
+  .mem {
+display:flex ;
+flex-direction: column;
+    
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .memimg {
+display:flex ;
+flex-direction: column;
+width: 100%;
+height: auto;    
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .memimgcamp img {
+
+width: 100%;
+height: auto;    
+  }
+}
+
+
+
+
+
+
 
 .memimg img:hover{
 
@@ -533,6 +575,13 @@ font-size: 25px;
   flex-wrap: wrap;
 }
 
+@media screen and (max-width: 600px) {
+  .footer{
+display: flex;
+flex-direction: column;    
+  }
+}
+
 .footer h1{
   margin-left: 4% ;
   margin-top: 2%;
@@ -546,13 +595,19 @@ font-size: 25px;
 .sponsorimg{
   width:68%;
   height: 150px;
-  background-color:black;
+  
   margin-top: 2%;
   margin-left: 4% ;
   display: flex;
   flex-direction: row;
   object-fit: cover;
   
+}
+
+@media screen and (max-width: 600px) {
+  .sponserimg{
+width: 100%;    
+  }
 }
 
 .spo1{
@@ -572,18 +627,15 @@ font-size: 25px;
 }
 
 
-
-
-.socmed{
-  height:150px;
-  width: 25%;
-  margin-top: 2%;
-  margin-left: 2%;
-  background-color: red;
-}
-
 .footer p1{
   width: 68%;
+ 
+}
+
+@media screen and (max-width: 600px) {
+  .footer p1{
+width: 100%;    
+  }
 }
 .footer p1 a{
   
@@ -592,5 +644,62 @@ font-size: 25px;
   letter-spacing: 2px;
   margin-left: 6%;
   font-size: 20px;
+  
 
 }
+
+.socmed{
+  height:auto;
+  width: 25%;
+  margin-top: 2%;
+ 
+
+  justify-content: center;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .socmed{
+width: 100%;    
+  }
+}
+
+
+.socmed p1{
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+
+
+}
+
+.medicon{
+  height:100px;
+  width: 100%;
+
+  margin-top: 3%;
+  display: flex;
+  flex-direction: row;
+  object-fit: cover;
+}
+
+.med1{
+  height:100%;
+  width:25%;
+}
+
+.med1 img {
+  filter: grayscale(100%) drop-shadow(0px 0px 0px black);
+  padding: 5px;
+  transition:.5s;
+  height: 70%;
+  width: 70%;
+}
+
+.med1 img:hover {
+  filter: grayscale(0%) drop-shadow(5px 5px 4px black) saturate(10);
+  transform: scale(1.2) rotate(40deg);
+}
+
