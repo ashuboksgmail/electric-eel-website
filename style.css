@@ -3,8 +3,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  max-width: 1920px;
-  max-height: 1080px;
+
 }
 
 /*background color of top navigation*/
@@ -14,6 +13,7 @@
   position: sticky;
   top: 0;
   z-index: 100;
+  
 
 }
 
@@ -26,7 +26,7 @@
   padding: 14px 16px;
   text-decoration: none;
   font-size: 25px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Baloo 2", cursive;
   display: flex;
   flex-direction: center;
   justify-content: right;
@@ -110,7 +110,7 @@ height: 50px;
 
 /*button*/
 .button1 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Baloo 2", cursive;
   float: right;
   border: 5px;
   color: white;
@@ -213,7 +213,7 @@ background-size: cover;
    display: flex;
    flex-direction: column;
    align-items: center;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
    
 }
 
@@ -231,7 +231,7 @@ background-size: cover;
    display: flex;
    flex-direction: column;
    align-items: center;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-family: 'Monoton', cursive;
    word-spacing: 5px;
    font-size: 35px;
    text-align: center;
@@ -249,6 +249,7 @@ background-size: cover;
   margin-top: 3%;
   letter-spacing: 2px;
   text-align: center;
+  font-family: "Baloo 2", cursive;
   
 }
 
@@ -264,6 +265,8 @@ background-size: cover;
   margin-top: 6%;
   letter-spacing: 2px;
   text-align: center;
+  font-family: 'Staatliches', cursive;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 600px) {
@@ -283,7 +286,7 @@ background-size: cover;
   bottom: 4%;
   left: 3%;
   font-size: 40px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ 
   text-align: left;
   letter-spacing: 5px;
   opacity: 80%;
@@ -292,12 +295,15 @@ background-size: cover;
 .info p1{
   letter-spacing: 10px;
   margin-left: 3%;
+  font-family: "Monoton", cursive;
+  font-weight: normal;
   
 }
 .info p2{
   font-size:25px ;
   letter-spacing:5px ;
   margin-left: 3%;
+  font-family: "Baloo 2", cursive;
 }
 
 @media screen and (max-width: 600px) {
@@ -323,7 +329,7 @@ background-size: cover;
 }
 
 .buytickets{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Baloo 2", cursive;
   padding: 6px 52px;
   border: 5px;
   border-radius: 9px;
@@ -363,10 +369,10 @@ background-size: cover;
   width: 15%;
   letter-spacing: 2px;
 
- 
+  font-family: 'Monoton', cursive;
   color: white;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 20px;
+ 
+  font-size: 18px;
 
 }
 
@@ -416,7 +422,7 @@ background-size: cover;
    display: flex;
    flex-direction: column;
    align-items: center;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+   
   
    
 
@@ -438,7 +444,7 @@ background-size: cover;
 
 .artist1 h1{
   margin-top: 4%;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+  font-family: 'Monoton', cursive;
   word-spacing: 4px;
   letter-spacing: 2px;
 
@@ -448,6 +454,7 @@ background-size: cover;
   text-decoration: none;
   color: white;
   letter-spacing: 2px;
+  font-family: "Baloo 2", cursive;
 }
 
 
@@ -460,7 +467,7 @@ background-size: cover;
   word-spacing: 3px;
   margin-top: 3%;
   color: white;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Monoton', cursive;
   font-size: 25px;
   text-align: center;
  
@@ -480,8 +487,8 @@ font-size: 20px;
   letter-spacing: 2px;
   margin-top: 3%;
   color: white;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 20px;
+  font-family: 'Monoton', cursive;
+  font-size: 18px;
   
 }
 
@@ -563,6 +570,7 @@ height: auto;
 
 .camp p1{
 font-size: 25px;
+font-family: "Baloo 2", cursive;
 
 }
 
@@ -703,3 +711,77 @@ width: 100%;
   transform: scale(1.2) rotate(40deg);
 }
 
+/*------------------------------------ARTIST--------------------------*/
+
+.artistpagehero {
+height:300px;
+background-image: url('artisthome.jpg');
+color: #ffffff;
+text-align: center;
+font-size: 50px;
+font-family:  "Baloo 2", cursive;
+
+}
+
+.artistcontent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: black;
+  padding: 30px;
+  background-image: ;
+}
+
+
+.artistinfo {
+  width: 30%;
+  background-color:  #137474;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  transition: 1s;
+}
+
+.pinkbg {
+  background-color: #540058;
+}
+
+.artistinfo:hover {
+  background-color: rgb(61, 61, 61);
+  box-shadow:  0 0 5px #00fdfd;
+}
+
+.artistinfo img {
+  width: 100%;
+  /*border: 0.5px solid #00fdfd;*/
+  border-radius: 100px;
+  box-shadow: -5px -5px 20px grey;
+
+  filter: grayscale();
+  transition: 0.5s;
+}
+
+.artistinfo:hover img {
+  filter: none;
+  transform: scale(1.1) rotate(360deg);
+  box-shadow:  0 0 5px #00fdfd;
+}
+
+.artistdetails {
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.artistdetails h1 {
+  font-family: "Baloo 2", cursive;
+  font-size: 40px;
+  color: white;
+}
+
+.artistdetails p {
+  padding-top: 30px;
+  font-family: "Baloo 2", cursive;
+  color: #ffffff;
+}
